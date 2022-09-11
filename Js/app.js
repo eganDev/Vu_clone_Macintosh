@@ -2,7 +2,8 @@ const search = document.querySelector('.search-bar')
 const delButton = document.querySelector('#search_delbtn')
 const menuToggle = document.querySelector('.menu_toggle')
 const activeNavigation = document.querySelector('.navigation')
-
+const openSildeSoftware = document.querySelector('.software')
+const slidebar1 = document.querySelector('.slide_bar_1')
 //clear input of search bar
 delButton.onclick = function() {
     document.getElementById('search').value = ''
@@ -14,6 +15,11 @@ document.addEventListener('keydown', function(e){
     }
 })
 
+
+openSildeSoftware.onclick = function() {
+    slidebar1.classList.toggle('act')
+}
+
 //funtion of click feature
 
 document.addEventListener('click', function(e){
@@ -23,3 +29,4 @@ document.addEventListener('click', function(e){
         activeNavigation.classList.remove('active')
     }
 })
+
