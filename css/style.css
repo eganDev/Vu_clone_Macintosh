@@ -284,6 +284,7 @@
     display: flex;
     justify-content: end;
     position: sticky;
+    top: 11vh;
 }
 
 .slide_bar {
