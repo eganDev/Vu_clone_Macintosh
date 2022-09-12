@@ -323,6 +323,9 @@
     transition: 0.4;
     cursor: pointer;
 }
+.software:hover {
+    background: #e7e9ff;
+}
 
 .software i {
     font-size: 40px;
@@ -445,10 +448,54 @@ span a {
     border-radius: 25px;
 }
 .slide_2{
+    position: relative;
     width: 30%;
     height: inherit;
-    background-color: bisque;
+    background-color: hsl(332, 100%, 81%) ;
     border-radius: 25px;
+}
+
+.slide_2 .img_add_box{
+    position: absolute;
+    width: 260px;
+    height: 250px;
+    right: 0;
+    bottom: 0;
+}
+
+.slide_2 .img_add_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.slide_2 .text_1 {
+    width: 300px;
+    height: 100px;
+}
+
+.slide_2 .text_1 >h1 {
+    font-size: 40px;
+}
+
+.slide_2 .text_box {
+    width: 300px;
+    height: 130px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+/* .slide_2 .text_box .a_text1 {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+} */
+
+.slide_2 .text_box .a_text1 a {
+    text-decoration: none;
+    color: #5367df;
 }
 
 .update_content {
@@ -482,6 +529,7 @@ span a {
     background: rgb(16, 136, 200);
 }
 .addition_game  {
+
     width: 95%;
     height: 500px;
     margin-top: 40px;
