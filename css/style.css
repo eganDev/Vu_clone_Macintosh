@@ -12,16 +12,18 @@
     background-color:#fff ;
     position: fixed;
     min-width: 100vw;
-    height: 100px;
+    height: 90px;
     display: flex;
     z-index: 10;
+    /* display: none; */
     box-shadow: rgba(218, 218, 226, 0.25) 0px 5px 5px, 
                 rgba(196, 196, 196, 0.25) 0px 8px 16px -8px;
 }
 
 .wrap_1{
-    width: 40vw;
+    width: 18vw;
     height: inherit;
+    margin-left: 10px;
     display: flex;
     align-items: center;;
     justify-content: center;    
@@ -33,23 +35,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 25px;
+    /* margin-right: 25px; */
 }
 .logo img {
     width: 220px;
 }
 
 .search_bar {
-    width: 420px;
-    height: 50%;
-    background-color: #f3f4ff;
+    /* width: 420px; */
+    height: 100%;
     display: flex;
     align-items: center;
-    border-radius: 40px;
     overflow: hidden;
     margin-right: 10px;
 }
-
+/* 
 .search_bar input {
     width: 300px;
     height: 30px;
@@ -74,12 +74,97 @@
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+
+.search{
+    position: relative;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    border: solid 1px #686b9d;
 }
 
-  
+.search .icon_search{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: 100;
+}
+
+.search .icon_search i {
+    font-size: 24px;
+}
+
+.search.open{
+    width: 510px;
+}
+
+.search .input_search {
+    position: relative;
+    width: 270px;
+    height: 50px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.search .input_search input {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    /* background-color: #000; */
+    margin-left: -25px;
+}
+.delete_search {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.delete_search::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 17px;
+    background-color: rgb(85, 85, 85);
+    transform: rotate(45deg);
+}
+
+.delete_search::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 17px;
+    background-color: rgb(85, 85, 85);
+    transform: rotate(-45deg);
+}
+
 
 .wrap_2{
-    width: 40vw;
+    width: 72vw;
     height: inherit;
     display: flex;
     justify-content: center;
@@ -97,7 +182,7 @@
     height: 50px;
     border-radius: 10px;
     background-color: white;
-    margin-right: 25px;
+    margin-right: 10px;
     font-size: 19px;
     text-decoration: none;
     color: #000;
@@ -109,7 +194,7 @@
 
 .nav a:hover {
     background-color: #f3f4ff;
-    font-size: 23px;
+    font-size: 21px;
 }
 .wrap_2 >a {
     width: 100px;
@@ -123,7 +208,7 @@
 }
 
 .navigation {
-    top:15px;
+    top:10px;
     right: 20px;
     width: 140px;
     height: 70px;
@@ -255,6 +340,7 @@
     display: flex;
     align-items: center;
     padding-left: 27px;
+    cursor: pointer;
 }
 
 .menu li:hover {
@@ -271,8 +357,9 @@
 }
 
 .space{
-    min-width: 100wh;
+    min-width: 100vw;
     height: 100px;  
+    background-color: #5367df;
 }
 .container {
     display: flex;
@@ -280,15 +367,16 @@
 
 .slide_bar_content {
     width: 16vw;
-    height: 85vh;
+    height: 90%;
     display: flex;
     justify-content: end;
     position: sticky;
-    top: 10vh;
+    top: 90px;
+    margin-left: 20px;
 }
 
 .section_1 {
-    height: 85vh;  
+    /* height: 80vh;   */
     display: flex;
     align-items: flex-start;
     flex-direction: column; 
@@ -349,6 +437,7 @@
     align-items: center;
     color: #686b9d;
 }
+
 
 .list_software ul li a {
     text-decoration: none;
@@ -419,13 +508,21 @@ span a {
     width: 84vw;
     height: initial;
 }
+
+.main_content_container {
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+
 .main_content {
+    margin-top: 100px;
     width: 96%;
     height: inherit;
     background-color: #f3f4ff;
     border-radius: 30px;
-    margin-left: 37px;
-    margin-top: 10px;
+    margin-left: 30px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -434,7 +531,7 @@ span a {
 }
 
 .slide_content {
-    margin-top: 40px;
+    margin-top: 30px;
     width: 95%;
     height: 340px;
     border-radius: 25px;

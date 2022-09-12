@@ -1,12 +1,18 @@
-const search = document.querySelector('.search-bar')
-const delButton = document.querySelector('#search_delbtn')
+const search = document.querySelector('.search')
 const menuToggle = document.querySelector('.menu_toggle')
 const activeNavigation = document.querySelector('.navigation')
 const openSildeSoftware = document.querySelector('.software')
 const slidebar1 = document.querySelector('.slide_bar_1')
+const icon = document.querySelector('.icon_search')
+const clear = document.querySelector('.delete_search')
+
 //clear input of search bar
-delButton.onclick = function() {
-    document.getElementById('search').value = ''
+
+icon.onclick = function() {
+    search.classList.toggle('open')
+}
+clear.onclick = function() {
+    document.getElementById('mysearch').value = ''
 }
 //keydown off usernav
 document.addEventListener('keydown', function(e){
