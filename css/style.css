@@ -263,7 +263,7 @@
     position: relative;
     min-width: 70px;
     height: 70px;
-    background-color: black;
+    /* background-color: black; */
     border-radius: 50%;
     border: solid 12px #fff;
     overflow: hidden;
@@ -632,7 +632,7 @@ span a {
     width: 100%;
     height: 80%;
     display: grid;
-    background-color: #5367df;
+    background-color: #fff;
     grid-template-columns: auto auto auto;
     grid-template-rows: 33% 33% 33%;
     padding: 30px;
@@ -642,8 +642,8 @@ span a {
 .content {
     width: 95%;
     height: 95%;
-    background-color: #59eb74;
-    border: solid 1px black;
+    /* background-color: #59eb74; */
+    /* border: solid 1px black; */
     /* margin-right: 20px; */
     display: flex;
     justify-content: center;
@@ -655,26 +655,104 @@ span a {
 .content .appList {
     width:100%;
     height: 75%;
-    background: #5367df;
     display: flex;
 }
 
 .content .appList .app_icon {
     width: 20%;
     height: 100%;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .appList .app_icon .app_icon_box {
+    width: 90px;
+    height: 90%;
+    /* background: #e7e9ff; */
+    position: relative;
+}
+
+
+.content .appList .app_icon .app_icon_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
 }
 
 .content .appList .app_infor {
     width: 60%;
     height: 100%;
-    background: burlywood;
+    /* background: burlywood; */
 }
 
 .content .appList .detail {
-    width: 20%;
-    height: 100%;
-    background: rgb(230, 146, 43);
+    width: 25%;
+    height: 92%;
+    /* background: rgb(230, 146, 43); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .appList .detail a {
+    width: 85%;
+    height: 50%;
+    background: #fff;
+    border-radius: 15px;
+    color: #5367df;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #5367df;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.content .appList .detail a:hover {
+    background: #eaedff;
+    transform: scale(1.03);
+}
+
+.content .appList .detail span {
+    width: 85%;
+    height: 50%;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    opacity: 0.5;
+}
+
+.content .appList .app_infor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+
+
+
+.content .appList .app_infor h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.content .appList .app_infor span {
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+#opacityText{
+    opacity: 0.7;
+    color: rgb(52, 52, 52);
 }
 
 .update_content_1{
