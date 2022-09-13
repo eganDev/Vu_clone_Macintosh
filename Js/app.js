@@ -36,3 +36,15 @@ document.addEventListener('click', function(e){
     }
 })
 
+let slide = tns({
+    container: '.slide_run',
+    navPosition: "bottom",
+    controlsPosition: "bottom",
+    controls: false,
+    items: 1,
+    gutter: 20,
+    slideBy: 1,
+    "mouseDrag": true,
+    "autoplay": true,
+    autoplayButtonOutput: false,
+})
