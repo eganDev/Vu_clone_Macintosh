@@ -1186,7 +1186,7 @@ span a {
 .ct_app_detail {
     width: 20%;
     height: 90%;
-    /* margin-left: 20px; */
+    margin-left: 20px;
     /* background: #2839ff; */
     display: flex;
     flex-direction: column;
@@ -1205,8 +1205,8 @@ span a {
     border-radius: 15px;
     font-size: 18px;
     font-weight: bold;
-    color: #2839ff;
-    border: solid 2px #2839ff;
+    color: #5367df;
+    border: solid 2px #5367df;
     transition: 0.1s;
 }
 .ct_app_detail a:hover {
