@@ -47,4 +47,6 @@ let slide = tns({
     "mouseDrag": true,
     "autoplay": true,
     autoplayButtonOutput: false,
+    speed: 500,
+    autoplayTimeout: 4000,
 })
