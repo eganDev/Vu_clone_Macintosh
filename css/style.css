@@ -195,6 +195,7 @@
 .nav a:hover {
     background-color: #f3f4ff;
     font-size: 21px;
+    color: #5367df;
 }
 .wrap_2 >a {
     width: 100px;
@@ -442,6 +443,10 @@
 .list_software ul li a {
     text-decoration: none;
     color: #686b9d;
+}
+
+.list_software ul li a:hover {
+    color: #5367df;
 }
 
 .software .text_a {
