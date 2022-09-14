@@ -617,14 +617,14 @@ span a {
 }
 .tns-nav button {
     border: none;
-    background: #cdcff0;
+    background: #eaebffbc;
     width: 15px;
     height: 15px;
     margin-left: 5px;
     border-radius: 50%;
 }
 .tns-nav .tns-nav-active {
-    background: rgb(86, 86, 86);
+    background: rgb(255, 255, 255);
 } 
 
 
