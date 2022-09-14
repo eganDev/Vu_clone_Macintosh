@@ -48,5 +48,5 @@ let slide = tns({
     "autoplay": true,
     autoplayButtonOutput: false,
     speed: 500,
-    autoplayTimeout: 4000,
+    autoplayTimeout:6000,
 })
