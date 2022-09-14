@@ -1210,6 +1210,7 @@ span a {
     transition: 0.1s;
 }
 .ct_app_detail a:hover {
+    background: #eaedff;
     transform: scale(1.03);
 }
 .ct_app_detail span{
