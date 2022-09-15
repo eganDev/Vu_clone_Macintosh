@@ -8,6 +8,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #header {
     background-color:#fff ;
     position: fixed;
@@ -82,7 +86,7 @@
     height: 50px;
     width: 54px;
     border-radius: 50px;
-    transition: 0.3s;
+    transition: 0.4s;
     cursor: pointer;
     overflow: hidden;
     border: solid 2px #5367df;
@@ -531,7 +535,7 @@ span a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 70px;
+    /* padding-bottom: 50px; */
 
 }
 
@@ -1454,6 +1458,7 @@ span a {
     text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
     cursor: pointer;
     transition: 0.2s;
+    padding-left: 10px;
 }
 .game_genre .game_gener_detail .downloads_icon_0 #downloads_text:hover {
     font-size: 18px;
@@ -1547,6 +1552,7 @@ span a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .game_img_ct_infor {
@@ -1563,7 +1569,7 @@ span a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .gameMore p {
@@ -1645,23 +1651,157 @@ span a {
 #tns3 {
     width: inherit;
 }
+
 #tns3-iw.tns-inner {
     height: 750px;
 }
+
 #tns3-mw {
     min-width: 73vh;
 }
+
 /* Nội dung thứ 6 */
 .addition_game  {
-
     width: 95%;
-    height: 500px;
+    height: 600px;
     margin-top: 40px;
     border-radius: 25px;
-    background: rgb(198, 14, 226); 
+    /* background: rgb(198, 14, 226);  */
+}
+.popular_game_ct {
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: #5367df; */
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.popular_game_ct_main {
+    width: 31.7%;
+    height: 100%;
+    /* background: #646464; */
+}   
+.popular_game_img {
+    width: 100%;
+    height: 55%;
+    /* background-color: #ff4747; */
+    border-radius: 25px;
+    /* border: solid 2px blue; */
+    overflow: hidden;
+}
+.popular_game_img_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.popular_game_img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.coating2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.coating2:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.coating2 .playbtn {
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 2px;
+    transform: 0.2s;
+}
+.coating2:hover .playbtn {
+    background: rgba(0, 0, 0, 0.589);
+}
+.coating2 .playbtn i {
+    display: none;
+}
+.coating2:hover .playbtn i {
+    display: block;
+    color: white;
+    font-size: 60px;
+}
+.popular_game_infor {
+    width: 100%;
+    height: 45%;
+    /* background-color: #a2b0ff; */
 }
 
+.popular_game_infor .popular_status {
+    width: 100%;
+    height: 33%;
+    /* background-color: #a6a7ba; */
+    display: flex;
+    align-items: center;
+}
+.popular_game_infor .popular_status > p {
+    width: 25%;
+    height: 40%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: #63646e;
+    /* font-size: ; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, 
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.popular_game_infor h3 {
+    margin-top: 18px;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+#popular_status1 {
+    width: 30%;
+    height: 40%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: #63646e;
+    /* font-size: ; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, 
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#popular_status2 {
+    width: 15%;
+    height: 40%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: #63646e;
+    /* font-size: ; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, 
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-right: 10px;
+}
 .contact {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.contact span {
     color: blue;
-    transform: translateY(30px);
 }
