@@ -35,7 +35,7 @@ document.addEventListener('click', function(e){
         activeNavigation.classList.remove('active')
     }
 })
-
+//slider 
 let slide = tns({
     container: '.slide_run',
     navPosition: "bottom",
@@ -50,3 +50,62 @@ let slide = tns({
     speed: 500,
     autoplayTimeout:4000,
 })
+
+//slider2
+// let slide_2 = tns({
+//     container: '.error_content',
+//     "items": 3,
+//     // "slideBy": "page",
+//     "mouseDrag": true,
+//     // "swipeAngle": false,
+//     "speed": 2000,
+//     "autoplay": true,
+
+//     nav: false,
+//     slideBy:1,
+//     controls: false,
+//     gutter:35,
+//     navPosition: "bottom",
+//     controlsPosition: "bottom",
+//     controls: false,
+//     autoplayButtonOutput:false,
+//     autoplayTimeout:10000,
+// })
+
+
+let slide3 = tns({
+    container: '.game_ct_0',
+    items:1,
+    nav: false,
+    slideBy:1,
+    controls: false,
+    navPosition: "bottom",
+    controlsPosition: "bottom",
+    controls: false,
+    autoplayButtonOutput:false,
+    autoplayTimeout:6000,
+    autoplayDirection: "backward",
+    "mouseDrag": true,
+    "swipeAngle": false,
+    "speed": 2000,
+    "autoplay": true,
+})
+
+// let slide4 = tns({
+//     container: '.game_ct_2_main',
+//     "axis": "vertical",
+//     items: 3,
+//     nav: false,
+//     slideBy:1,
+//     controls: false,
+//     navPosition: "bottom",
+//     controlsPosition: "bottom",
+//     controls: false,
+//     autoplayButtonOutput:false,
+//     // autoplayTimeout:5000,
+//     // autoplayDirection: "forward",
+//     "mouseDrag": true,
+//     "swipeAngle": false,
+//     "speed": 2000,
+//     // "autoplay": true,
+// })
