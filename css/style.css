@@ -1731,6 +1731,9 @@ span a {
 .coating2:hover .playbtn {
     background: rgba(0, 0, 0, 0.589);
 }
+.coating2 .playbtn a {
+    text-decoration: none;
+}
 .coating2 .playbtn i {
     display: none;
 }
