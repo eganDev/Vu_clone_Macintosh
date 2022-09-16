@@ -1574,7 +1574,7 @@ span a {
 
 .gameMore p {
 
-    width: 32%;
+    width: 50%;
     height: 30px;
     /* background: white; */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
@@ -1756,7 +1756,7 @@ span a {
     align-items: center;
 }
 .popular_game_infor .popular_status > p {
-    width: 25%;
+    width: 30%;
     height: 40%;
     background: #fff;
     display: flex;
@@ -1774,7 +1774,7 @@ span a {
     font-size: 20px;
 }
 #popular_status1 {
-    width: 30%;
+    width: 40%;
     height: 40%;
     background: #fff;
     display: flex;
